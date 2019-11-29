@@ -30,7 +30,7 @@ public class IntervalWorkout {
         System.out.println("***************************** \n"+"Interval Workout STARTS !!!!\n"+"*****************************");
         for(int i=0;i<IntervalWorkout.getRepetitions();i++) {
             System.out.println("=============================");
-            System.out.println("ROUND "+(+1)+":");
+            System.out.println("ROUND "+(i+1)+":");
             workoutRound();
             System.out.println("=============================\n" +
                     "DO THE BREAK ("+ this.getBreaktime()+" SECONDS)");

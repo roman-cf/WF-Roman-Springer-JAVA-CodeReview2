@@ -10,6 +10,10 @@ public class Exercise {
         this.duration = duration;
         this.position = position;
     }
+    public String formatTXT(String txtToFormat){
+        double loops = txtToFormat.length()/100;
+        return this.description.substring(100);
+    }
 
     // create print method (using formatting) that prints those objects in a form like this:
     public String printExercise(){
