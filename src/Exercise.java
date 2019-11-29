@@ -15,9 +15,6 @@ public class Exercise {
     public String printExercise(){
         return this.exName + "\tDuration: "+ this.duration + " seconds \n--------------------------------------------------\nDESCRIPTION: " + this.description;
     }
-    private String umbruch(){
-        return this.description;
-    }
 
     public boolean isPosition() {
         return position;
@@ -25,5 +22,9 @@ public class Exercise {
 
     public int getDuration() {
         return duration;
+    }
+
+    public String getExName() {
+        return exName;
     }
 }

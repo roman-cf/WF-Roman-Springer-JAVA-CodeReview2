@@ -1,4 +1,6 @@
 public class CodeReviewJ2 {
+    public static Exercise[] exercisesArr = new Exercise[6];
+
     public static void main(String[] args) {
 
     // Using the text above, create 6 objects.
@@ -36,7 +38,6 @@ public class CodeReviewJ2 {
     System.out.println(fitex1.printExercise());
 
     // (20) Put your objects into an array and call your printing method in the loop.
-    Exercise[] exercisesArr = new Exercise[6];
     exercisesArr[0] = fitex1;
     exercisesArr[1] = fitex2;
     exercisesArr[2] = fitex3;
@@ -49,21 +50,24 @@ public class CodeReviewJ2 {
     }
 
     // Create a new loop through the array  and print only:
-    System.out.println("\n \nExercises on the floor only:");
+    System.out.println("\n \n \n \nExercises on the floor only:");
     for (int i = 0; i < exercisesArr.length; i ++){
         if (exercisesArr[i].isPosition()){
             System.out.println(exercisesArr[i].printExercise());
         }
     }
 
-    System.out.println("\n \nExercises that are on the floor and take more than a minute:");
+    System.out.println("\n \n \n \nExercises that are on the floor and take more than a minute:");
     for (int i = 0; i < exercisesArr.length; i ++ ){
         if (exercisesArr[i].isPosition() && exercisesArr[i].getDuration()>60){
             System.out.println(exercisesArr[i].printExercise());
         }
+    }
+    // erstes argument sind die indizes der übungen im array der übungen
+    IntervalWorkout workout1 = new IntervalWorkout(new int[]{0, 2, 1},4,30);
+    workout1.printWorkout();
+
 
     }
 
-
-    }
 }
