@@ -66,6 +66,8 @@ public class CodeReviewJ2 {
     // erstes argument sind die indizes der übungen im array der übungen
     IntervalWorkout workout1 = new IntervalWorkout(new int[]{0, 2, 1},4,30);
     workout1.printWorkout();
+    IntervalWorkout workout2 = new IntervalWorkout(new int[]{4,2,1,4,0},2,45);
+    workout2.printWorkout();
 
 
     }
